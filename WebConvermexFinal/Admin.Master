@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="WebConvermexFinal.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Convermex</title>
+    <script src="jscript/sweetalert2.all.min.js"></script>
+    <link href="css/sweetalert2.min.css" rel="stylesheet" />
+    <script src="jscript/FuncionSweet.js"></script>
+    <link rel="shortcut icon" href="imagenes/convermex2.png" />
+    <link href="css/cssReset.css" rel="stylesheet" />
+    <link href="css/cssAdmin.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/401642f1a5.js" crossorigin="anonymous"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="imagenes/convermex2.png" alt="" class="logo" />
+            </a>
+            <ul class="menu-header">
+                <li class="lista-header"><a href="altaPersonal.aspx" class="link-menu">Alta Personal</a></li>
+                <li class="lista-header"><a href="modificarPersonal.aspx" class="link-menu">Modificar Personal</a></li>
+                <li class="lista-header"><a href="busquedaPersonal.aspx" class="link-menu">Busqueda</a></li>
+                <li class="lista-header"><a href="reportePersonal.aspx" class="link-menu">Tablas Convermex</a></li>
+            </ul>
+        </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+                <li class="lista-social"><a href="https://www.facebook.com/grupo.convermex/" target="_blank" class="fa fa-facebook red"></a></li>
+                <li class="lista-social"><a href="https://www.ibarramayoreo.com/catalogo/CONVERMEX/" target="_blank" class="fa-solid fa-browser"></a></li>
+            </ul>
+            <ul class="menu-footer">
+                <li class="lista-menu"><a href="altaPersonal.aspx" class="link-footer">Alta Personal</a></li>
+                <li class="lista-menu"><a href="modificarPersonal.aspx" class="link-footer">Modificar Personal</a></li>
+                <li class="lista-menu"><a href="busquedaPersonal.aspx" class="link-footer">Busqueda</a></li>
+                <li class="lista-menu"><a href="reportePersonal.aspx" class="link-footer">Tablas Convermex</a></li>
+            </ul>
+            <p>&copy; 2022 <b>Convermex</b> - Todos los Derechos Reservados.</p>
+        </footer>
+    </form>
+</body>
+</html>

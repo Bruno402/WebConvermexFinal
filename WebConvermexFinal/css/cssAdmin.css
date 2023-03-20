@@ -1,0 +1,252 @@
+﻿
+/*COMENZAMOS CON EL DISEÑO DEL MENU DE LA PAGINA*/
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+    background: #2fcdcd;
+    height: 110px;
+    width: 100%;
+}
+
+.enlace {
+    position: absolute;
+    padding: 5px 50px;
+}
+
+.logo {
+    height: 100px;
+    width: 120px;
+}
+
+nav .menu-header {
+    float: right;
+    margin-right: 50px;
+}
+
+    nav .menu-header .lista-header {
+        display: inline-block;
+        line-height: 110px;
+        margin: 0 5px;
+    }
+
+        nav .menu-header .lista-header .link-menu {
+            color: #fff;
+            font-size: 18px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+.lista-header .link-menu.active, .lista-header .link-menu:hover {
+    background: #000090;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 110px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*section{
+    background: url(../imagenes/fondoAdmin.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 110px);
+}*/
+
+/*COMENZAMOS CON LA PARTE DEL BODY*/
+
+/*section {*/
+/*display: flex;
+    justify-content: flex-end;*/
+/*min-height: calc(100vh - 110px);
+    width: 100%;
+    background: #333;
+}*/
+
+/*CCOMENZAMOS A DISEÑAR EL FOOTER*/
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 170px;
+}
+
+    footer .social-icon,
+    footer .menu-footer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+
+        footer .social-icon .lista-social,
+        footer .menu-footer .lista-menu {
+            list-style: none;
+        }
+
+            footer .social-icon .lista-social .red {
+                font-size: 2em;
+                color: #fff;
+                margin: 0 10px;
+                display: inline-block;
+                transition: 0.5s;
+            }
+
+                footer .social-icon .lista-social .red:hover {
+                    transform: translateY(-10px);
+                }
+
+            footer .menu-footer .lista-menu .link-footer {
+                font-size: 1.2em;
+                color: #fff;
+                margin: 0 10px;
+                display: inline-block;
+                text-decoration: none;
+                opacity: 0.75;
+            }
+
+                footer .menu-footer .lista-menu .link-footer:hover {
+                    opacity: 1;
+                }
+
+    footer p {
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }
+
+    footer .wave {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(../imagenes/wave.png);
+        background-size: 1000px 100px;
+    }
+
+        footer .wave#wave1 {
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: animateWave 4s linear infinite;
+        }
+
+        footer .wave#wave2 {
+            z-index: 999;
+            opacity: 0.5;
+            bottom: 10px;
+            animation: animateWave_02 4s linear infinite;
+        }
+
+        footer .wave#wave3 {
+            z-index: 1000;
+            opacity: 0.2;
+            bottom: 15px;
+            animation: animateWave 3s linear infinite;
+        }
+
+        footer .wave#wave4 {
+            z-index: 999;
+            opacity: 0.7;
+            bottom: 20px;
+            animation: animateWave_02 3s linear infinite;
+        }
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+/*AQUI COMENZAMOS A DISEÑAR LA PARTE RESPONSIVA DE LA PAGINA*/
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav .menu-header .lista-header .link-menu {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .menu-header {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #868986;
+        top: 110px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav .menu-header .lista-header {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+        nav .menu-header .lista-header .link-menu {
+            font-size: 20px;
+        }
+
+    .lista-header .link-menu:hover, .lista-header .link-menu.active {
+        background: #181918;
+    }
+
+    #check:checked ~ .menu-header {
+        left: 0;
+    }
+}

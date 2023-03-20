@@ -1,0 +1,148 @@
+﻿.todos-elementos {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.tabla{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.contene-centro {
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: -100px;
+    width: 500px;
+}
+
+.cont-row {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.cont-tabla {
+    width: 300px;
+    margin: auto;
+}
+
+.boton-grid{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.formulario {
+    width: 95%;
+    max-width: 500px;
+    margin: 140px auto;
+    background: white;
+    border-radius: 7px;
+}
+
+.formulario2 {
+    width: 95%;
+    max-width: 1000px;
+    margin: 140px auto;
+    background: white;
+    border-radius: 7px;
+}
+
+.form-titulo {
+    background: deepskyblue;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid crimson;
+}
+
+.contenedor-form {
+    /*background: #97989B;
+    opacity: 0.7;*/
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 10px 10px 10px #CECFD2;
+}
+
+.radio {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.inputs {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+.input-48 {
+    width: 48%;
+}
+
+.input-100 {
+    width: 100%;
+}
+
+.btnCliente {
+    background: #74B7F9;
+    color: #fff;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.btnCliente2 {
+    background: #74B7F9;
+    color: #fff;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.btnBuscarTabla {
+    background: #74B7F9;
+    color: #fff;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 40px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.btnCliente:active {
+    transform: scale(1.05);
+}
+
+.contenedor-grid{
+    width: 100%;
+}
+
+.dropdown {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    border-radius: 7px;
+}
